@@ -93,8 +93,8 @@ const translations = {
 // Dil değiştirme fonksiyonu
 function changeLanguage(lang) {
   if (!translations[lang]) {
-    console.warn(`Language "${lang}" not found, defaulting to Turkish`);
-    lang = "tr";
+    console.warn(`Language "${lang}" not found, defaulting to English`);
+    lang = "en";
   }
   
   // Tüm [data-i18n] elementlerini bul ve güncelle
