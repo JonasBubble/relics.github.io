@@ -111,27 +111,7 @@ function changeLanguage(lang) {
 
   // Dil bayrağını güncelle
   const langFlags = {
-    tr: "🇹🇷 TR",
     en: "🇬🇧 EN",
-    de: "🇩🇪 DE",
-    fr: "🇫🇷 FR",
-    es: "🇪🇸 ES",
-    it: "🇮🇹 IT",
-    pt: "🇵🇹 PT",
-    br: "🇧🇷 BR",
-    ru: "🇷🇺 RU",
-    ja: "🇯🇵 JA",
-    zh: "🇨🇳 ZH",
-    ar: "🇸🇦 AR",
-    pl: "🇵🇱 PL",
-    cz: "🇨🇿 CZ",
-    dk: "🇩🇰 DK",
-    nl: "🇳🇱 NL",
-    no: "🇳🇴 NO",
-    se: "🇸🇪 SE",
-    ua: "🇺🇦 UA",
-    il: "🇮🇱 IL",
-    ro: "🇷🇴 RO"
   };
   
   const currentLangEl = document.getElementById("currentLang");
