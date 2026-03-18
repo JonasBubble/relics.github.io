@@ -8,16 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --primary-blue: #4da3ff;
-  --primary-blue-dark: #2f7fd1;
-  --primary-blue-light: #e6f2ff;
-  --background-main: #f7fbff;
-  --background-soft: #ffffff;
-  --text-dark: #1a2a3a;
-  --text-light-50: rgba(26, 42, 58, 0.6);
 }
-
-/* Base */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f7fa;
@@ -34,11 +25,7 @@ html {
   background: transparent;
   padding: 20px 0;
   transition: all 0.3s ease;
-  background-color: var(--background-main);
-  color: var(--text-dark);
 }
-
-/* Navbar */
 .navbar-container {
   max-width: 90%;
   margin: 0 auto;
@@ -123,11 +110,7 @@ html {
   transform: rotate(360deg) scale(1.15);
   filter: drop-shadow(0 12px 30px rgba(60, 176, 67, 0.8));
   animation: none;
-  background: linear-gradient(135deg, #ffffff, #f0f7ff);
-  box-shadow: 0 8px 25px rgba(77, 163, 255, 0.15);
-  border: 1px solid rgba(77, 163, 255, 0.2);
 }
-
 .nav-link {
   color: #d0e9d8;
   font-weight: 600;
@@ -257,9 +240,7 @@ html {
 .language-menu::-webkit-scrollbar-thumb {
   background: var(--minecraft-green);
   border-radius: 10px;
-  color: var(--text-dark);
 }
-
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -269,12 +250,7 @@ html {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
-.nav-link:hover {
-  color: var(--primary-blue);
-  background: rgba(77, 163, 255, 0.1);
-  border-color: rgba(77, 163, 255, 0.3);
 }
-
 /* Navbar Toggler */
 .navbar-toggler {
   border: 1px solid rgba(60, 176, 67, 0.5);
@@ -292,12 +268,10 @@ html {
 }
 
 /* Hero Section */
-/* Hero */
 .hero {
   position: relative;
   min-height: 100vh;
   background: linear-gradient(135deg, rgba(2, 26, 26, 0.85), rgba(23, 64, 32, 0.85)),
-  background: linear-gradient(135deg, rgba(230, 242, 255, 0.9), rgba(255, 255, 255, 0.9)),
     url("../../../background.png") center/cover no-repeat;
   padding: 160px 0 100px;
   color: #fff;
@@ -394,9 +368,7 @@ html {
 
 .text-light-50 {
   color: var(--text-light-50);
-  color: var(--text-dark);
 }
-
 .hero-card {
   background: rgba(10, 26, 26, 0.85);
   border-radius: 20px;
@@ -457,11 +429,7 @@ html {
   background: rgba(60, 176, 67, 0.1);
   border-color: var(--minecraft-green);
   box-shadow: 0 0 20px rgba(60, 176, 67, 0.4);
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(77, 163, 255, 0.2);
-  box-shadow: 0 25px 60px rgba(77, 163, 255, 0.15);
 }
-
 /* Sections */
 .section {
   padding: 100px 0;
@@ -552,9 +520,7 @@ html {
   color: #5c6b73;
   font-size: 1.1rem;
   font-weight: 400;
-  background: linear-gradient(180deg, #ffffff, #f0f7ff);
 }
-
 .section.bg-dark {
   background: linear-gradient(135deg, #0a1a1a 0%, #132b1e 80%, #1a4029 100%);
   color: #fff;
@@ -603,10 +569,7 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
-  background: linear-gradient(135deg, #e6f2ff, #cfe6ff);
-  color: var(--text-dark);
 }
-
 /* Cards */
 @@ -585,950 +60,52 @@ html {
 .info-card,
@@ -658,11 +621,8 @@ html {
   box-shadow: 
     0 8px 25px rgba(0, 0, 0, 0.08),
     0 2px 8px rgba(60, 176, 67, 0.1);
-  background: linear-gradient(135deg, #ffffff, #f5faff);
-  border: 1px solid rgba(77, 163, 255, 0.15);
 }
-
-.card:hover,
+  .card:hover,
 .tos-item:hover,
 .info-card:hover,
 .privacy-card:hover {
@@ -874,79 +834,20 @@ html {
     0 35px 70px rgba(60, 176, 67, 0.3),
     0 0 40px rgba(60, 176, 67, 0.2);
   border-color: var(--minecraft-green);
-.card:hover {
-  border-color: var(--primary-blue);
-  box-shadow: 0 20px 50px rgba(77, 163, 255, 0.2);
 }
-
 .social-link:hover svg {
   fill: #fff;
   transform: scale(1.15) rotate(-5deg);
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
-/* Buttons */
-.btn-success {
-  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-dark));
-  border-color: var(--primary-blue);
 }
 
 .social-link:active {
   transform: translateY(-8px) scale(1.05);
-.btn-success:hover {
-  background: linear-gradient(135deg, var(--primary-blue-dark), #1f6bb8);
 }
 
-/* Accordion */
-.accordion-item {
-  border: none;
-  margin-bottom: 16px;
-  border-radius: 16px !important;
-  overflow: hidden;
-  box-shadow: 
-    0 4px 15px rgba(0, 0, 0, 0.08),
-    0 0 0 1px rgba(60, 176, 67, 0.1);
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  background: linear-gradient(135deg, #ffffff 0%, #f9fcfa 100%);
-}
-
-.accordion-item:hover {
-  box-shadow: 
-    0 12px 30px rgba(0, 0, 0, 0.12),
-    0 0 0 2px rgba(60, 176, 67, 0.2);
-  transform: translateX(5px);
-}
-
-.accordion-button {
-  background: linear-gradient(135deg, #ffffff 0%, #f5faf7 100%);
-  color: #0a1a1a;
-  font-weight: 600;
-  font-size: 1.05rem;
-  padding: 1.3rem 1.8rem;
-  border: none;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.accordion-button::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: var(--minecraft-green);
-  transform: scaleY(0);
-  transition: transform 0.3s ease;
-}
-
-.accordion-button:hover::before {
-  transform: scaleY(1);
-}
-
-.accordion-button:not(.collapsed) {
-  background: linear-gradient(135deg, var(--minecraft-green) 0%, #2a9d34 100%);
-  background: var(--primary-blue);
-  color: #fff;
+.social-link:active {
+  transform: translateY(-8px) scale(1.05);
+color: #fff;
   box-shadow: 
     0 6px 20px rgba(60, 176, 67, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -1044,17 +945,13 @@ html {
 .footer-logo:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 25px rgba(60, 176, 67, 0.5);
-  background: linear-gradient(180deg, #e6f2ff, #cfe6ff);
-  color: var(--text-dark);
 }
-
 .footer-title {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 15px;
   background: linear-gradient(135deg, #3cb043, #5dd662);
-  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-dark));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1560,20 +1457,15 @@ html {
 ::-webkit-scrollbar {
   width: 12px;
 }
-
-/* Scrollbar */
 ::-webkit-scrollbar-track {
   background: #0a1a1a;
-  background: #e6f2ff;
 }
-
 ::-webkit-scrollbar-thumb {
   background: var(--minecraft-green);
   border-radius: 6px;
-  background: var(--primary-blue);
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #2a9d34;
-  background: var(--primary-blue-dark);
 }
+  
+  
